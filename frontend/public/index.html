@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/frontend/src/css/index.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <header>
+        <h1>To Do List</h1>
+    </header>
+    <main>
+        <div class="cardPrincipal">
+            <div class="card">
+                <h1>Adicionar Tarefa</h1>
+                <form id="form">
+                    <textarea name="tarefa" id="tarefa"></textarea>
+                    <select name="dificuldade" id="dificuldade">
+                        <option value="Difícil">Difícil</option>
+                        <option value="Médio">Médio</option>
+                        <option value="Fácil">Fácil</option>
+                    </select>
+                    <button type="submit">Adicionar</button>
+                </form>
+            </div>
+            <div class="card">
+                <h1>Tarefa Adicionadas</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tarefa</th>
+                            <th>Dificuldade</th>
+                            <th>Açôes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela"></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="/frontend/src/js/index.js"></script>
+</body>
+</html>

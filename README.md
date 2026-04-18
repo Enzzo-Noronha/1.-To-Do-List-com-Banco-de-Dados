@@ -11,13 +11,14 @@ Aplicação simples de lista de tarefas com persistência em banco de dados.
 ## ⚙️ Funcionalidades
 - Criar tarefas
 - Listar tarefas
-- Marcar como concluída
+- Editar tarefas
 - Excluir tarefas
 
 ## 📦 Instalação
 
 ```bash
-git clone https://github.com/Enzzo-Noronha/1.-To-Do-List-com-Banco-de-Dados.gitepo
-cd backend
+git clone https://github.com/Enzzo-Noronha/1.-To-Do-List-com-Banco-de-Dados.git
+cd 1.-To-Do-List-com-Banco-de-Dados
 npm install
-node server.js
+node backend/config/server.js
+```

@@ -1,0 +1,193 @@
+/*===========================
+            GLOBAL
+===========================*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --cor-primaria: #181818;
+    --cor-secundaria: #09ff00;
+}
+
+/*===========================
+            BODY
+===========================*/
+body{
+    background-color: var(--cor-primaria);
+}
+
+/*===========================
+            HEADER
+===========================*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--cor-secundaria);
+    color: white;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 10px;
+}
+
+/*===========================
+            MAIN
+===========================*/
+.cardPrincipal{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin: 15px;
+    gap: 15px;
+}
+
+.card{
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 5px;
+    min-height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.card h1{
+    background-color: var(--cor-secundaria);
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.card form{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    gap: 10px;
+}
+
+#form select, button{
+    width: 100%;
+    height: 45px;
+    padding: 5px;
+    background-color: var(--cor-primaria);
+    border: 1px solid var(--cor-secundaria);
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#form textarea{
+    width: 100%;
+    height: 100px;
+    background-color: var(--cor-primaria);
+    border: 1px solid var(--cor-secundaria);
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+/*===========================
+            TABELA
+===========================*/
+table {
+    width: 99%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+thead tr {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+thead th {
+    padding: 12px 15px;
+    font-size: 16px;
+    text-align: left;
+}
+
+thead th:nth-child(1) { width: 75%; }
+thead th:nth-child(2) { width: 15%; }
+thead th:nth-child(3) { width: 10%; }
+
+tbody tr {
+    border-bottom: 1px solid rgba(9, 255, 0, 0.2);
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+    background-color: rgba(9, 255, 0, 0.05);
+}
+
+tbody td {
+    padding: 16px 15px;
+    font-size: 17px;
+    color: white;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.badge-facil {
+    background-color: rgba(9, 255, 0, 0.15);
+    border: 1px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
+}
+
+.badge-medio {
+    background-color: rgba(255, 165, 0, 0.15);
+    border: 1px solid orange;
+    color: orange;
+}
+
+.badge-dificil {
+    background-color: rgba(255, 50, 50, 0.15);
+    border: 1px solid #ff3232;
+    color: #ff3232;
+}
+
+.btn-acoes {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-editar, .btn-deletar {
+    padding: 6px 12px;
+    height: auto;
+    font-size: 13px;
+    cursor: pointer;
+    width: auto;
+}
+
+.btn-editar {
+    background-color: rgba(9, 255, 0, 0.1);
+    border: 1px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
+}
+
+.btn-editar:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+.btn-deletar {
+    background-color: rgba(255, 50, 50, 0.1);
+    border: 1px solid #ff3232;
+    color: #ff3232;
+}
+
+.btn-deletar:hover {
+    background-color: #ff3232;
+    color: white;
+}

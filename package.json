@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "better-sqlite3": "^12.9.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "sqlite3": "^6.0.1"
+  },
+  "name": "1.-to-do-list-com-banco-de-dados",
+  "version": "1.0.0",
+  "description": "Aplicação simples de lista de tarefas com persistência em banco de dados.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enzzo-Noronha/1.-To-Do-List-com-Banco-de-Dados.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Enzzo-Noronha/1.-To-Do-List-com-Banco-de-Dados/issues"
+  },
+  "homepage": "https://github.com/Enzzo-Noronha/1.-To-Do-List-com-Banco-de-Dados#readme"
+}
